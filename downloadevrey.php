@@ -26,10 +26,6 @@ $headers[] = 'Sec-Fetch-Site: same-origin';
 $headers[] = 'User-Agent: Mozilla/5.0 (Linux; Android 11; RMX3231) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
-$response = curl_exec($ch);
-curl_close($ch);
-$json =  json_decode($response);
-echo json_encode($json,JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 }
 
 
